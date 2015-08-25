@@ -1,0 +1,292 @@
+﻿* {
+    margin:  0;
+	padding: 0;
+	font-family: arial, helvetica, sans-serif;
+	font-size: 1em;
+	color: rgb(70,70,70);
+}
+
+header, section {
+    margin: 0 0.8em;
+}
+
+/* -------- Design padrão - para mobile -------- */
+
+#menu {
+	display: none;
+}
+
+h1 {
+    font-size: 2em;
+	text-align: center;
+	background: rgb(60,120,255);
+	color: white;
+	padding: 1em 0;
+}
+
+p {
+	font-size: 1.2em;
+	text-align: justify;
+}
+
+h2, h3 {
+	font-size: 1.5em;
+	text-align: center;
+	padding: 1em 0;
+	color: black;
+	font-weight: normal;
+}
+
+#f-para {
+    background: rgb(60,120,255);
+	padding: 0.8em;
+}
+
+#f-para p {
+    color: white;
+}
+
+h3 {
+    color: white;
+	font-weight: bolder;
+}
+
+.rd-img {
+	margin: 1em 0;
+}
+	
+@media only screen and (max-width: 70em){
+
+#logo {
+    width: 30%;
+	margin-top: 4em;
+}
+
+#menu {
+    position: fixed;
+	z-index: 10;
+	width: 3em;
+	height: 3em;
+	right: 0.8em;
+	top: 0;
+	border-left: 0.2em solid black;
+	border-bottom: 0.2em solid black;
+	border-right: 0.2em solid black;
+	display: block;
+}
+
+#menu:hover {
+	border-left: 0.2em solid rgb(60,120,255);
+	border-bottom: 0.2em solid rgb(60,120,255);
+	border-right: 0.2em solid rgb(60,120,255);
+}
+
+#h-nav {
+	position: fixed;
+	top: 0;
+	left: 0;
+	padding-top: 3.4em;
+	bottom: 0;
+	height: 100%;
+	width: 100%;
+	background: rgba(0,0,0,0.95);
+	overflow: hidden;
+}
+
+#h-nav.hidden {
+	transition: height 0.2s linear 0s;
+	height: 0;
+}
+
+#h-nav.show {
+    height: 100%;
+	transition: height 0.2s linear 0s;
+}
+
+#h-nav li {
+    list-style: none;
+	text-align: center;
+}
+
+#h-nav a {
+	width: 100%;
+	padding: 1em 0;
+	font-size: 1.5em;
+	border-bottom: 0.1em solid white;
+}
+
+#h-nav a:link {
+	display: block;
+	color: white;
+	text-decoration: none;
+}
+
+#h-nav a:visited {
+	color: white;
+}
+
+#h-nav a:hover {
+    color: black;
+	background: white;
+	transition: color 0.2s linear 0s,
+				background-color 0.2s linear 0s;
+}
+
+}
+	
+@media only screen and (max-width: 32em){
+
+#logo {
+    width: 100%;
+	margin-top: 4em;
+}
+
+.rd-img {
+    width: 100%;
+}
+
+}
+
+@media only screen and (min-width: 32em){
+
+header {
+	height: 13em;
+}
+
+#logo {
+	width: 30%;
+}
+
+h1 {
+    width: 60%;
+	float: right;
+	margin-top: 1.7em;
+}
+
+.rd-img {
+	width: 40%;
+}
+
+section .rd-img:nth-of-type(1){
+    float: left;
+	margin-right: 1em;
+}
+
+section .rd-img:nth-of-type(2){
+	float: right;
+	margin-left: 1em;
+}
+
+}
+
+	
+@media only screen and (min-width: 70em){
+
+body {
+   background: black;
+   padding: 1em 0;
+}
+   
+header {
+    height: 12.5em;
+}
+
+h1 {
+	margin: 0;
+}
+
+header, section {
+    margin: 0 5em;
+	background: rgb(240,240,240);
+	padding: 1em 5em;
+}
+
+header {
+    padding: 0;
+    padding-left: 5em;
+}
+
+footer {
+    margin-top: 0;
+}
+
+header + section {
+	clear: both;
+}
+
+#f-para {
+	margin: 0 5em;
+	padding: 0 5em 2em;
+}
+
+#logo {
+    width: 30%;
+	float: left;
+}
+
+h1 {
+    float: right;
+	width: 70%;
+	margin-bottom: 0;
+}
+
+#h-nav {
+    float: right;
+	margin-top: 0;
+	width: 70%;
+	background: silver;
+	text-align: center;
+	font-weight: bolder;
+}
+
+#h-nav li {
+    display: inline;
+}
+
+#h-nav a:link {
+    padding: 2em 0.3em;
+	display: inline-block;
+	text-decoration: none;
+	color: black;
+	background-color: silver;
+	transition: color 0.2s,
+				background-color 0.4s;
+}
+
+#h-nav a:visited {
+	color: black;
+	background: silver;
+	transition: color 0.2s,
+				background-color 0.4s;
+}
+
+#h-nav a:hover {
+    color: white;
+	background: black;
+	transition: color 0.2s,
+				background-color 0.4s;
+}
+
+section .rd-img {
+    width: 20%;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
